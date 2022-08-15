@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - Kokoa Clone</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- To Do: Wifi Icon -->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!-- To Do: Battery Icon -->
+        <i class="fas fa-battery-half fa-lg"></i>
+        <!-- To Do: Lightning Icon -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><a href="setting.html"><i class="fas fa-cog fa-lg"></i></a></span>
+        <div class="red-dot-box">
+          <div class="red-dot"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span
+            >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i
+          ></span>
+        </div>
+        <div class="open-post">
+            <div class="op-post__column">
+                <h5 class="open-post__title">#BTS</h5>
+                <h6 class="open-post__hashtags">#bts#army#friends</h6>
+                <div class="open-post__members">
+                    <img src="https://file.mk.co.kr/meet/neds/2022/07/image_readtop_2022_584596_16569098865095887.jpg" />
+                    <span class="open-post__members-counter">802 members</span>
+                    <div class="divider"></div>
+                    <span class="open-post__members-status">Activ</span>
+                </div>
+            </div>
+            <div class="op-post__column">
+                <div class="open-post__photo">
+                    <img src="https://file.mk.co.kr/meet/neds/2022/07/image_readtop_2022_584596_16569098865095887.jpg" />
+                    <div class="op-post__heart-count"> 
+                        <i class="fas fa-heart fa-xs"></i>
+                        <span>326</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- navigation은 보통 ul로 구성되어있다.
+    구글의 검섹엔진도 navigation을 찾아서 ul의 li안에 link를 가져오게끔.. -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="badge nav__notofication">1</span>
+            <i class="far fa-comments fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__newpoint"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+      <span>Your screen is to big ㅜㅜ</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/671026a79a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

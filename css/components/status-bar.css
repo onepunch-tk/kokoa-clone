@@ -1,0 +1,32 @@
+.status-bar {
+  position: fixed;
+  top: 0px;
+  width: 100%; 
+  box-sizing: border-box; 
+  display: flex;
+    /* 각 status-bar__column 마다 크기가 다르기때문에 
+    space-between만으로는 요소를 정중앙에 놓을수 없다. css hack사용 */
+    /* justify-content: space-between; */
+    justify-content: center;
+    padding: 5px 3px;
+  }
+  
+  .status-bar__column:first-child span {
+    margin-right: 5px;
+  }
+  /* css hack */
+  .status-bar__column {
+    width: 33%;
+  }
+  .status-bar__column:nth-child(2) span {
+    display: flex;
+    justify-content: center;
+  }
+  .status-bar__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .status-bar__column .fa-battery-half {
+    margin: 0px 5px;
+  }
